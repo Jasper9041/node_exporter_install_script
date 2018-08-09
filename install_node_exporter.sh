@@ -16,7 +16,7 @@ tar xfz /tmp/node_exporter.tar.gz -C /tmp/node_exporter || { echo "ERROR! Extrac
 cp "/tmp/node_exporter/node_exporter-$version.$arch/node_exporter" "$bin_dir"
 
 groupadd node_exporter
-useradd node-exporter
+useradd node_exporter
 usermod -g node_exporter node_exporter
 
 chown node_exporter:node_exporter "$bin_dir/node_exporter"
